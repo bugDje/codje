@@ -17,61 +17,126 @@ h1#title{
     -1px 1px 0px #fcfcfc,
     -1px -1px 0px #fcfcfc,
     1px -1px 0px #fcfcfc,
-    2px 2px 4px black;
-    user-select: none;
+    2px 2px 4px black;  
 }
 nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
     box-shadow: 1px 1px 10px black;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%; 
+    height: 75px;
     background-color: whitesmoke;
     z-index: 1;
     transition: top 0.3s;
 }
 nav ul{
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    margin: 10px 0 10px 0px;
+    display: flex; 
     list-style: none;
+    align-items: center;
 }
 nav ul li{ 
-margin: 0 5px;
-background-color: forestgreen;
-box-shadow: 2px 2px 2px black;
-border-radius: 10px;
+margin: 0 10px;
+
 width: 100px;
+height: 40px;
 transition: all 0.3s ease;
 }
 ul li a{
-    font-size: 1em;
+background-color: forestgreen;
+box-shadow: 2px 2px 2px black;
+border-radius: 10px;
+font-size: 1.5em;
 display: flex;
-justify-content: center;
+justify-content: space-evenly;
 font-weight: bolder;
 padding: 5px;
 color: #fcfcfc;
 text-decoration: none;
 
 }
-ul li:hover{
+ul li a:hover{
 background-color: green;
 
 }
-ul li:active{
+ul li a:active{
     box-shadow: 1px 1px 1px black;
     background-color: darkgreen
 }
 iframe{
 position: absolute;
-    top: 100px;
+    top: 70px;
     left: 0;
     width: 100%;
     height: 80vh;
-
-
 }
+.footer{    
+    color: rgba(0, 0, 0, 0.575);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 0.8em;
+}
+
+@media (max-width:641px) {
+nav{
+    height: 70px;
+}
+h1#title {
+    font-size: 2.5em;
+}
+
+@media (max-width:481px) { 
+    h1#title {
+        margin-top: 10px;
+        font-size: 1.9em;
+        line-height: 28px;
+    }
+    nav ul li {
+        width: 85px;
+        margin: 0 5px;
+ }
+    ul li a {
+        font-size: 1.2em;
+ }
+} 
+}
+ @media (max-width:380px) { 
+    nav ul li {
+        width: 85px;
+        margin: 0 5px;
+ }
+    ul li a {
+        font-size: 1em;
+ }
+ h1#title {
+    font-size: 2em;
+    margin-top: 0px;
+}
+}
+ @media (max-width:320px) { 
+    nav ul li {
+        width: 77px;
+        margin: 0 5px;
+ }
+    ul li a {
+        font-size: 1em;
+ }
+ h1#title {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+}
+ 
+
+
+
+
+
+
+
 
