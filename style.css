@@ -98,16 +98,21 @@ iframe {
   padding: 3px 5px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   font-size: 12px;
   height:20px;
   width: 100%;
   background-color: whitesmoke;
   position: fixed;
   bottom: 0;
+  transition: bottom 0.3s;
  
 }
 footer #menuFooter{
- margin: -3px;
+  font-weight: 700;
+  position: absolute;
+  transform: translate(-50%, 0%);  
+  left: 50%;
   font-size: 15px;
   color: darkgreen;
   text-shadow: 1px 1px 0px #fcfcfc, -1px 1px 0px #fcfcfc, -1px -1px 0px #fcfcfc,
